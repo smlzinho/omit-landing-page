@@ -375,7 +375,7 @@ export default function LandingPage() {
             Para acessar a plataforma OMIT e todas as suas ferramentas após o pagamento, clique no botão abaixo:
           </p>
           <motion.a
-            href="http://localhost:3002/login-kiwify"
+            href="https://suas-vendas-seu-lucro-dnjgbb8bs-samuels-projects-59b087e2.vercel.app/login-kiwify"
             className={`${styles.ctaButton} ${styles.ctaGold}`}
             style={{ display: 'inline-flex', padding: '16px 40px', textDecoration: 'none' }}
             whileHover={{ scale: 1.05 }}
