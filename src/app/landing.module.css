@@ -1,0 +1,282 @@
+.landingWrapper {
+    --apple-bg: #ffffff;
+    --apple-text: #1d1d1f;
+    --apple-gray: #f5f5f7;
+    --apple-blue: #0071e3;
+    --gold-primary: #d4af37;
+    --gold-secondary: #b8860b;
+
+    background: var(--apple-bg) !important;
+    color: var(--apple-text) !important;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(circle at center, #ffffff 0%, #f5f5f7 100%);
+}
+
+.badge {
+    background: rgba(212, 175, 55, 0.1);
+    color: var(--gold-primary);
+    padding: 6px 16px;
+    border-radius: 99px;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.headline {
+    font-size: clamp(36px, 8vw, 64px);
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+    margin-bottom: 24px;
+    background: linear-gradient(180deg, #1d1d1f 0%, #434344 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subheadline {
+    font-size: clamp(18px, 4vw, 24px);
+    color: #86868b;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    line-height: 1.4;
+}
+
+/* Comparison Section */
+.comparisonGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.comparisonBox {
+    padding: 40px;
+    border-radius: 24px;
+}
+
+.oldWay {
+    background: #fff5f5;
+    border: 1px solid #ffebeb;
+}
+
+.newWay {
+    background: #f5fff9;
+    border: 1px solid #e6ffef;
+}
+
+.comparisonBox h3 {
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+.comparisonList {
+    list-style: none;
+}
+
+.comparisonList li {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+}
+
+/* Features Grid */
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.featureCard {
+    background: var(--apple-gray);
+    padding: 32px;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.featureCard:hover {
+    transform: translateY(-5px);
+}
+
+/* Testimonials */
+.reviewsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.reviewCard {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.reviewHeader {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ */
+.faqItem {
+    border-bottom: 1px solid #e5e5e7;
+    padding: 24px 0;
+}
+
+/* CTA Button */
+.ctaButton {
+    background: var(--apple-text);
+    color: white;
+    padding: 16px 40px;
+    border-radius: 99px;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.ctaButton:hover {
+    transform: scale(1.05);
+    background: #000;
+}
+
+.ctaGold {
+    background: #d4af37;
+    color: white;
+}
+
+/* Pricing Section Redesign */
+.offerSection {
+    background: #f5f5f7;
+    padding: 100px 20px;
+}
+
+.offerContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 0;
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
+}
+
+.oldWayColumn {
+    background: #1d1d1f;
+    color: white;
+    padding: 60px 40px;
+}
+
+.newWayColumn {
+    background: #ffffff;
+    padding: 60px 40px;
+    border: 4px solid #34c759;
+    position: relative;
+}
+
+.indispensavel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #34c759;
+    color: white;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.priceHighlight {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.oldPriceRed {
+    color: #ff3b30;
+    text-decoration: line-through;
+    font-size: 18px;
+    display: block;
+}
+
+.newPriceGreen {
+    color: #1d1d1f;
+    font-size: 56px;
+    font-weight: 900;
+    display: block;
+}
+
+.newWayList {
+    list-style: none;
+    margin-top: 24px;
+}
+
+.newWayList li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+/* Update hero and remove pricingCard styles */
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+    .offerContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .oldWayColumn,
+    .newWayColumn {
+        padding: 40px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 20px;
+    }
+}
